@@ -6,7 +6,7 @@ st.title('whoareyou') #le titre de l'app
 
 
 
-with open ('Staline.jpg', 'rb') as imageisfile:
+with open ('.\Staline.jpg', 'rb') as imageisfile:
     itismyimage = Image(imageisfile)
 
 
@@ -42,13 +42,13 @@ if st.button('test'):
 
 if st.button('test2'):
     print("test")
-    with open ('Staline_modified.jpg', 'rb') as imageisfile:
+    with open ('.\Staline_modified.jpg', 'rb') as imageisfile:
         Coucou = Image(imageisfile)
         print(Coucou.list_all())
         
 if st.button('test3'):
     print("test3")
-    with open ('Staline_modified.jpg', 'rb') as imageisfile:
+    with open ('.\Staline_modified.jpg', 'rb') as imageisfile:
         Coucou = Image(imageisfile)
         print(Coucou.Artist)#imprime l'attribut
         print(Coucou.Make)#imprime l'attribut
@@ -94,5 +94,5 @@ if st.button('enregistrer dans staline_modified.jpg'):
 
 
     print("enregistré")
-    with open('staline_modified.jpg', 'wb') as new_image_file:
+    with open('.\staline_modified.jpg', 'wb') as new_image_file:
         new_image_file.write(itismyimage.get_file())
