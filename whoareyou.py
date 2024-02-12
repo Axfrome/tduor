@@ -6,7 +6,7 @@ st.title('whoareyou') #le titre de l'app
 
 
 
-with open ('Staline.jpg', 'rb') as imageisfile:
+with open ('https://github.com/Axfrome/tduor/blob/master/Staline.jpg', 'rb') as imageisfile:
     itismyimage = Image(imageisfile)
 
 
