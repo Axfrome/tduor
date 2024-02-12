@@ -6,11 +6,11 @@ st.title('whoareyou') #le titre de l'app
 
 
 
-with open ('https://github.com/Axfrome/tduor/blob/master/Staline.jpg', 'rb') as imageisfile:
+with open ('Staline.jpg', 'rb') as imageisfile:
     itismyimage = Image(imageisfile)
 
 
-st.image('Staline.jpg', width = 200,  caption='staline et non stallone')
+st.image('.\Staline.jpg', width = 200,  caption='staline et non stallone')
 
 
 auteur = st.text_input("Auteur de l'image", key="Auteur")
